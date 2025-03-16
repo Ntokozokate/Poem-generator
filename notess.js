@@ -22,6 +22,12 @@ function updateHeadingAndFetchPoem(event) {
     .catch(function (error) {
       poemParagraph.innerHTML = `Could not fetch poem about${heading.innerHTML}, please try again...`;
     });
+  new Typewriter("#poem", {
+    autoStart: true,
+    cursor: "", // Optional: No cursor for cleaner appearance
+    delay: 10, // Adjust typing speed
+  });
+  typewriter.typeString(poemParagraph).start();
 }
 
 generateButton.addEventListener("click", updateHeadingAndFetchPoem);

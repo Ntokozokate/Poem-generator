@@ -20,7 +20,7 @@ function updateHeadingAndFetchPoem(event) {
       poemParagraph.innerHTML = response.data.answer;
     })
     .catch(function (error) {
-      poemParagraph.innerHTML = `Could not fetch poem about${heading.innerHTML}, please try again`;
+      poemParagraph.innerHTML = `Could not fetch poem about${heading.innerHTML}, please try again...`;
     });
 }
 

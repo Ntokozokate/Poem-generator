@@ -37,6 +37,10 @@ body {
 .app-icon {
   max-width: 10em;
 }
+.label {
+  font-size: 0.9em;
+  opacity: 50%;
+}
 .search-input {
   box-shadow: 3px 3px 10px var(--main-branding-color-one),
     3px 3px 10px var(--main-branding-color-one);
@@ -44,7 +48,7 @@ body {
   padding: 0px 10px;
 }
 .word-input {
-  width: 50%;
+  width: 40%;
   background-color: var(--main-branding-color);
   border-bottom: 3px solid var(--main-branding-color-two);
   border-radius: 0.3em;
@@ -59,7 +63,7 @@ body {
   background-color: var(--main-branding-color-three);
   color: #390628;
   border: 2px solid #e14b8c88;
-  padding: 10px 20px;
+  padding: 6px 12px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
@@ -84,5 +88,9 @@ body {
   font-size: 3em;
 }
 .poem-output p {
-  font-size: 1.5em;
+  font-size: 1.1em;
+}
+small {
+  font-size: 0.6em;
+  margin: 60px;
 }
