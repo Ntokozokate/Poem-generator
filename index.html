@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Poem Generator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="app-details">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/160/334/original/2890575_ai_artificial_intelligence_automaton_electronics_robotics_icon.png?1742049406"
+          alt="AI picture"
+          class="app-icon"
+        />
+        <div class="app-tittle">
+          <h1>
+            AI Poem <br />
+            Generator
+          </h1>
+          <p>Enter a word(s) for the AI to generate a poem for you</p>
+        </div>
+      </div>
+      <!--end of header------NEXT----Search Input and button-->
+      <form action="get input value" id="search-input" class="search-input">
+        <label for="prompt" class="amount">Name of Poem</label>
+        <input
+          type="text "
+          id="word-input"
+          name="UserImput"
+          required
+          class="word-input"
+        />
+        <button id="generate-button" class="generate-button" type="submit">
+          Generate
+        </button>
+      </form>
+      <div class="poem-output" id="poem-output">
+        <h4 class="poem-heading" id="poem-heading">Flame Lillies</h4>
+        <p id="poem">
+          The flame lily, crowned in fiery grace, Petals of flame in a delicate
+          embrace. Dancing in whispers of scarlet and gold, A story of beauty,
+          timeless and bold. Born in the cradle of warmth and sun, A bloom where
+          nature and magic are one. Its elegance flickers, gentle yet wild, A
+          wonder of earth, untamed and beguiled.
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
